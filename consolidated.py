@@ -29,13 +29,12 @@ images = np.array(images)
 labels = np.array(labels)
 
 
-with open(os.path.join(data_dir,'image.p'),'wb') as f:
-    pickle.dump(image,f)
+with open(os.path.join(data_dir,'images.p'),'wb') as f:
+    pickle.dump(images,f)
 
 
 with open(os.path.join(data_dir,'labels.p'),'wb') as f:
     pickle.dump(labels,f)
-
 
 
 
